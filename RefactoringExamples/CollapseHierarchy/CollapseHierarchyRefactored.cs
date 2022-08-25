@@ -18,20 +18,11 @@ namespace RefactoringExamples.CollapseHierarchy
         }
     }
 
-    public class SimpleJobRefactored : BaseJobRefactored
-    {
-
-    }
-
-
     public class TestRefactored
     {
         public void TM()
         {
-            SimpleJobRefactored simpleJob = new SimpleJobRefactored();
             BaseJobRefactored baseJob = new BaseJobRefactored();
-            
-            simpleJob.Execute();
             
             baseJob.Execute();
         }
